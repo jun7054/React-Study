@@ -50,6 +50,45 @@ ul .red{
     color: red;
 }
 /* 활성화됐을때(focus) */
-input:focus{
+#in:focus{
     background-color: aqua;
 }
+
+/* 가상 */
+.car span:first-child{
+    color: orange;
+}
+.car h3:last-child{
+    color: gray;
+}
+.car *:nth-child(2){
+    color: red;
+}
+
+/* 부정 */
+.car *:not(span){
+    font-size: x-large;
+}
+
+/* before after */
+.box::before{
+    content: "(❁´◡`❁)";
+}
+.box::after{
+    content: "☆*: .｡. o(≧▽≦)o .｡.:*☆²";
+}
+
+/* ~~에 대한 */
+/* disabled를 가진 것 들다 */
+[disabled]{
+    color: red;
+}
+/* 특정 타입만 하는법 */
+[type="password"]{
+    color: yellowgreen;
+}
+[value="HI"]{
+    color: rgb(34, 124, 25);
+}
+
+/* 상속 */
