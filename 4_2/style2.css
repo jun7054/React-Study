@@ -1,0 +1,55 @@
+/* css내에서 다른css파일 가져올수 있음 */
+@import url("./style.css"); /*url함수*/
+
+#id {
+    /* ...속성들 */
+    background-color: aqua;
+}
+
+.class{
+    /* ...속성들 */
+    background-color: antiquewhite;
+}
+
+/* 일치 선택자 */
+/* span 태그 이면서 orange인거 */
+span.orange{
+    color: orange;
+}
+
+/* 자식 선택자 (>) */
+/* ul의 자식 요소 인 class "green" 속성과 값을 */
+ul > .green{
+    color: green;
+}
+
+/* 하위 선택자 */
+ul .red{
+    color: red;
+}
+
+/* 인접 형태 선택자 */
+/* 선택된거(yellow)에서 가장 가까운거(포도) */
+.yellow + li{
+    color: yellowgreen;
+}
+
+/* 일반 형제 선택자 */
+/* 선택된거(yellow) 아래에 있는거(딸기, 포도) */
+.yellow ~ li{
+    color: yellow;
+}
+
+/* 가상 선택자 */
+/* 마우스 올렸을때(hover) */
+.purple:hover{
+    color: purple;
+}
+/* 마우스 누르고 있는 동안(active) */
+.purple:active{
+    color: red;
+}
+/* 활성화됐을때(focus) */
+input:focus{
+    background-color: aqua;
+}
