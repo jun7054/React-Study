@@ -31,6 +31,7 @@ else if (4.5 == n){
     document.write("신");
 }
 
+
 // let A = "aaa";
 // console.log(typeof(A));
 // let a = "가나다"+"라마바사";
