@@ -13,24 +13,23 @@
 
 // 3번째
 
-let n = Number(prompt());
+// let n = Number(prompt());
 
-if (1<=n && n < 2){
-    document.write("플랑크톤");
-}
-else if (2<=n && n<3){
-    document.write("돌고래");
-}
-else if (3<=n && n<4){
-    document.write("인간");
-}
-else if (3<=n && n<4.5){
-    document.write("교수님");
-}
-else if (4.5 == n){
-    document.write("신");
-}
-
+// if (1<=n && n < 2){
+//     document.write("플랑크톤");
+// }
+// else if (2<=n && n<3){
+//     document.write("돌고래");
+// }
+// else if (3<=n && n<4){
+//     document.write("인간");
+// }
+// else if (3<=n && n<4.5){
+//     document.write("교수님");
+// }
+// else if (4.5 == n){
+//     document.write("신");
+// }
 
 // let A = "aaa";
 // console.log(typeof(A));
@@ -39,3 +38,4 @@ else if (4.5 == n){
 // let num = 123+456;
 // console.log(num);
 
+// 반복문
