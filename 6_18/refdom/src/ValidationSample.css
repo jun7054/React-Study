@@ -10,3 +10,12 @@
     text-align: center;
     margin-top: 50px;
 }
+
+h3 {
+    color: aliceblue;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+}
