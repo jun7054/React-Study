@@ -1,0 +1,12 @@
+.success {
+    background-color: lightgreen;
+}
+
+.failure {
+    background-color: lightcoral;
+}
+
+* {
+    text-align: center;
+    margin-top: 50px;
+}
