@@ -18,14 +18,24 @@ const IterationSample = () => {
             id : nextId,
             text : inputText
         });
+        setNextId(nextId+1);
+        setNames(nextNames)
+        setInputText('');
     }
 
-    const nameList = names.map(name => <li key={name.id}>{name.text}</li>);
+
+    const onRemove = id => {
+        const nextNames = names.filter(name => name.id !== id);
+        setNames(nextNames);
+    }
+                                                        // 더블클릭 : onDoubleClick
+    const nameList = names.map(name => <li key={name.id} onClick={() => onRemove(name.id)}>
+        {name.text}</li>);
     console.log(nameList);
     return(
         <>
         <input value={inputText} onChange={onChange}></input>
-        <button>추가</button>
+        <button onClick={onclick}>추가</button>
         <ul>{nameList}</ul>
         </>
     );
