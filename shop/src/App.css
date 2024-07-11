@@ -4,8 +4,10 @@
 }
 /* 대문 사진 */
 .main-bg {
-  height: 600px;
+  height: 500px;
+  background-repeat: no-repeat;
   background-image: url('./img/bg-main.png');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  margin-bottom: 30px;
 }
