@@ -36,9 +36,23 @@ function App() {
           </>
         }></Route>
         <Route path='/detail' element={<Detail/>}></Route>
+        <Route path='*' element={<div>없는 페이지입니다<p></p>404</div>}></Route>
+        <Route path='/about' element={<About/>}>
+          <Route path='member' element={<div>멤버</div>}></Route>
+          <Route path='location' element={<About/>}></Route>
+        </Route>
       </Routes>
     </div>
   );
+}
+
+function About (){
+  return (
+    <div>
+      <h4>회사정보임</h4>
+      <Outlet></Outlet>
+    </div>
+  )
 }
 
 function Card(props){
